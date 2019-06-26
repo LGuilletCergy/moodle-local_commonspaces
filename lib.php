@@ -200,7 +200,7 @@ function local_commonspaces_grouping($type, $course) {
 
         echo "Création du groupement $groupingname<br>";
         $grouping = new stdClass();
-        $grouping->courseid = $courseid;
+        $grouping->courseid = $course->id;
         $grouping->name = $groupingname;
         $grouping->description = '';
         $grouping->id = groups_create_grouping($grouping);
