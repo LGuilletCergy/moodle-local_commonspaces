@@ -147,9 +147,11 @@ function local_commonspaces_createcourse($facultycode, $facultycategory) {
 
     if (!$course) {
 
-        echo "Création du cours $coursename<br>";
-        $coursedata = new stdClass();
+
         $coursename = get_string('studentmessages', 'local_commonspaces').substr($facultyname[1], 1);
+        echo "Création du cours $coursename<br>";
+        $coursename = local_commonspaces_tryshortname($coursename, 0);
+        $coursedata = new stdClass();
         $coursedata->fullname = $coursename;
         $coursedata->shortname = $coursename;
         $coursedata->category = $vetcategory->id;
@@ -163,6 +165,28 @@ function local_commonspaces_createcourse($facultycode, $facultycategory) {
     }
 
     return $course;
+}
+
+function local_commonspaces_tryshortname ($coursename, $i) {
+
+    global $DB;
+
+    $newshortname = $coursename;
+
+    if ($i) {
+
+        $newshortname .= "_$i";
+    }
+
+    $already = $DB->record_exists('course', array('shortname' => $newshortname));
+
+    if ($already) {
+
+        return local_commonspaces_tryshortname($coursename, $i + 1);
+    } else {
+
+        return $newshortname;
+    }
 }
 
 function local_commonspaces_grouping($type, $course) {
