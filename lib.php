@@ -425,6 +425,7 @@ function local_commonspaces_folder($course, $section, $trainingcategory, $traini
         $moduleinfo->page_after_submit = '';
         $moduleinfo->type = 'news';
         $moduleinfo->forcesubscribe = 1;
+        $moduleinfo->files = null;
         $moduleinfo = create_module($moduleinfo);
         $foldercmid = $moduleinfo->coursemodule;
     }
