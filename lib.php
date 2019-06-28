@@ -150,10 +150,11 @@ function local_commonspaces_createcourse($facultycode, $facultycategory) {
 
         $coursename = get_string('studentmessages', 'local_commonspaces').substr($facultyname[1], 1);
         echo "Création du cours $coursename<br>";
-        $coursename = local_commonspaces_tryshortname($coursename, 0);
+        $shortname = $CFG->yearprefix."-".$coursename;
+        $shortname = local_commonspaces_tryshortname($shortname, 0);
         $coursedata = new stdClass();
         $coursedata->fullname = $coursename;
-        $coursedata->shortname = $CFG->yearprefix.$coursename;
+        $coursedata->shortname = $shortname;
         $coursedata->category = $vetcategory->id;
         $coursedata->idnumber = $courseidnumber;
         $coursedata->visible = 0;
