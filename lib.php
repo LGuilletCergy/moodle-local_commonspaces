@@ -153,7 +153,7 @@ function local_commonspaces_createcourse($facultycode, $facultycategory) {
         $coursename = local_commonspaces_tryshortname($coursename, 0);
         $coursedata = new stdClass();
         $coursedata->fullname = $coursename;
-        $coursedata->shortname = $coursename;
+        $coursedata->shortname = $CFG->yearprefix.$coursename;
         $coursedata->category = $vetcategory->id;
         $coursedata->idnumber = $courseidnumber;
         $coursedata->visible = 0;
