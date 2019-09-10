@@ -31,6 +31,6 @@
  * Version number
  */
 
-$plugin->version = 2018062701;
+$plugin->version = 2018091000;
 $plugin->requires = 2015051100;
 $plugin->component = 'local_commonspaces';

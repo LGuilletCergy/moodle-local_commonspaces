@@ -30,7 +30,7 @@
  * File : lang/en/local_commonspaces.php
  * English text strings
  */
- 
+
 $string['pluginname'] = 'Common spaces';
 $string['commonspacefor'] = 'Common space for';
 $string['studentmessages'] = 'Messages to students from ';
@@ -38,5 +38,6 @@ $string['toallstudents'] = 'To all students';
 $string['levels'] = 'Levels';
 $string['trainings'] = 'Trainings';
 $string['updatespaces'] = 'Update the common spaces';
+$string['unsubscribeteachersdroit'] = 'Unsubscribe teachers and appuiadmins of UFR Droit from forums of the common space';
 $string['importantmessages'] = 'Important messages';
 $string['documentsfor'] = 'Documents for';
