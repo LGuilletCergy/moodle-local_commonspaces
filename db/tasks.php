@@ -43,4 +43,14 @@ $tasks = array(
         'dayofweek' => '*',
         'month' => '*'
     ),
+
+    array(
+        'classname' => 'local_commonspaces\task\unsubscribeteachersdroit',
+        'blocking' => 0,
+        'minute' => '00',
+        'hour' => '8',
+        'day' => '*',
+        'dayofweek' => '*',
+        'month' => '*'
+    ),
 );
