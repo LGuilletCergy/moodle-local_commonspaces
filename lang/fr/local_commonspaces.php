@@ -39,7 +39,5 @@ $string['toallstudents'] = 'A tous les étudiants';
 $string['levels'] = 'Niveaux';
 $string['trainings'] = 'Formations';
 $string['updatespaces'] = 'Mettre à jour les espaces communs';
-$string['unsubscribeteachersdroit'] = 'Désabonner les enseignants et appui administratifs du droit
-    des forums de l\'espace commun';
 $string['importantmessages'] = 'Messages importants';
 $string['documentsfor'] = 'Documents pour les';

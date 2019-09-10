@@ -38,6 +38,5 @@ $string['toallstudents'] = 'To all students';
 $string['levels'] = 'Levels';
 $string['trainings'] = 'Trainings';
 $string['updatespaces'] = 'Update the common spaces';
-$string['unsubscribeteachersdroit'] = 'Unsubscribe teachers and appuiadmins of UFR Droit from forums of the common space';
 $string['importantmessages'] = 'Important messages';
 $string['documentsfor'] = 'Documents for';
