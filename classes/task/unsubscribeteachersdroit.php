@@ -58,7 +58,7 @@ class unsubscribeteachersdroit extends \core\task\scheduled_task {
         $listappuiadminsassignments = $DB->get_records('role_assignments',
                 array('roleid' => $roleappuiadminid, 'contextid' => $contextid));
 
-        $listforums = $DB->get_records('forum', array('courseid' => $course->id));
+        $listforums = $DB->get_records('forum', array('course' => $course->id));
 
         foreach ($listforums as $forum) {
 
